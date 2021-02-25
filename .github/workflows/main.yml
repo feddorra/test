@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: deploy step
       id: deployt
-      uses: feddorra/git-ftp@v2
+      uses: feddorra/git-ftp@v3
       with:
         url: ${{ secrets.URL }}
         user: ${{ secrets.USERNAME }}
