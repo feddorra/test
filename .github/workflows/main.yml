@@ -1,0 +1,14 @@
+on: [push]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: deploy
+    steps:
+    - name: deploy step
+      id: deployt
+      uses: feddorra/git-ftp@v1
+      with:
+        url: ${{ secrets.URL }}
+        user: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
