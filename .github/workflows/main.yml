@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: deploy
     steps:
+    - uses: actions/checkout@v2
     - name: deploy step
       id: deployt
       uses: feddorra/git-ftp@v3
